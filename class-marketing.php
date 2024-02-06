@@ -7,7 +7,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <h2>Marketing Status <!--<input type=text id="dateFinder"/>--></h2>
-                    <a href="https://www.lawenforcementseminars.com/admin/class-marketing-past.php"><span class="newbutton">View Past Classes</span></a>
+                    <a href="https://www.example.com/exampleAdministration/viewMarketingExmaplePage.php"><span class="newbutton">View Past Classes</span></a>
                     <div class="container" style="padding-bottom: 15px; font-size: 12px; width: 100%;">
                     	<div class="table-responsive">
                         <table id="example" class="display" cellspacing="0" width="100%">
@@ -51,7 +51,7 @@
                                 <td>" . ($result['is_virtual']?strtok($result['dateSelect'], "-"):$result['genLocation']) ."</td>";
                                 echo "<td><input type='checkbox' class='created' name='mailer_created' value='" . $result['mailer_created'] . "'/></td>";
                                 echo "<td>Rnd 1 <input type='text' rows='2' cols='3' class='created date_input' name='mailer_sent_rnd1' value='" . $result['mailer_sent_rnd1'] . "'/><br>Rnd 2 <input type='text' rows='2' cols='3' class='created date_input' name='mailer_sent_rnd2' value='" . $result['mailer_sent_rnd2'] . "'/><br>Rnd 3 <input type='text' rows='2' cols='3' class='created date_input' name='mailer_sent_rnd3' value='" . $result['mailer_sent_rnd3'] . "'/>";
-                                if($result['typeSelect'] == 'Background Investigations for Police Applicants' || $result['typeSelect'] == 'Internal Affairs Investigations')
+                                if($result['typeSelect'] == 'ExampleClass1' || $result['typeSelect'] == 'ExampleClass2')
                                     {
                                         echo "<br>MCH-Rnd 1 <input type='text' rows='2' cols='3' class='created date_input' name='mch_rnd_1' value='" . $result['mch_rnd_1'] . "'/><br>MCH-Rnd 2 <input type='text' rows='2' cols='3' class='created date_input' name='mch_rnd_2' value='" . $result['mch_rnd_2'] . "'/>";
                                     }
@@ -62,10 +62,10 @@
                                 echo "<td>Rnd 1 <input type='text' rows='2' cols='3' class='created date_input' name='email_sent_rnd1' value='" . $result['email_sent_rnd1'] . "'/><br>Rnd 2 <input type='text' rows='2' cols='3' class='created date_input' name='email_sent_rnd2' value='" . $result['email_sent_rnd2'] . "'/><br>Rnd 3 <input type='text' rows='2' cols='3' class='created date_input' name='email_sent_rnd3' value='" . $result['email_sent_rnd3'] . "'/><br>Final <input type='text' rows='2' cols='3' class='created date_input' name='email_sent_final' value='" . $result['email_sent_final'] . "'/></td>";
                                 echo "<td><input type='text' rows='2' cols='3' class='created date_input' name='poc' value='" . $result['poc'] . "'/></td><td>";
 
-                                if($result['typeSelect'] == 'Background Investigations for Police Applicants')
+                                if($result['typeSelect'] == 'Example Class 1')
                                 {
-                                    echo "Rnd 1<input type='text' rows='2' cols='3' class='created date_input' name='calea' value='" . $result['calea'] . "'/><br>";
-                                    echo "Rnd 2<input type='text' rows='2' cols='3' class='created date_input' name='calea2' value='" . $result['calea2'] . "'/>";
+                                    echo "Rnd 1<input type='text' rows='2' cols='3' class='created date_input' name='example' value='" . $result['example'] . "'/><br>";
+                                    echo "Rnd 2<input type='text' rows='2' cols='3' class='created date_input' name='example' value='" . $result['example'] . "'/>";
                                 }
                                
                                 echo "</tr>";
